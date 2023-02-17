@@ -1,8 +1,6 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-// axios.defaults.baseURL = 'https://phonebook-tn5s.onrender.com/';
-
 axios.defaults.baseURL = 'https://contactform-b6no.onrender.com/';
 
 export const addMessage = createAsyncThunk(

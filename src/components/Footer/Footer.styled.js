@@ -30,6 +30,7 @@ export const Icons = styled.ul`
   gap: 39px;
   text-decoration: none;
   list-style: none;
+
   @media screen and (min-width: 1440px) {
     padding-left: 340px;
   }
@@ -71,12 +72,14 @@ export const PinkSmileFooter = styled.img`
 
 export const GreenSmile = styled.img`
   display: none;
+
   @media screen and (min-width: 768px) {
     display: block;
     position: absolute;
     top: 0;
     right: 128px;
   }
+
   @media screen and (min-width: 1440px) {
     display: block;
     position: absolute;
@@ -92,6 +95,7 @@ export const YellowSmile = styled.img`
     position: absolute;
     right: -38px;
   }
+  
   &:hover,
   &:focus {
     animation: ${smile} 1s ease infinite;

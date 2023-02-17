@@ -9,6 +9,7 @@ export const MapImg = styled.img`
     height: 100%;
   }
 `;
+
 export const ImgSection = styled.div`
   display: none;
 
