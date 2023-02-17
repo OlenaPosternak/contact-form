@@ -1,7 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { addMessage } from '../../redux/operations';
 import { useState } from 'react';
-import { Formik, ErrorMessage } from 'formik';
+import { Formik } from 'formik';
 import * as yup from 'yup';
 
 import { ToastContainer, toast } from 'react-toastify';
