@@ -14,28 +14,24 @@ export const FooterSection = styled.div`
 export const FooterInfo = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
 
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
+  @media screen and (min-width: 1440px) {
+    justify-content: flex-start;
   }
 `;
 export const Icons = styled.ul`
   display: flex;
   gap: 39px;
-  padding-left: 340px;
   text-decoration: none;
   list-style: none;
+  @media screen and (min-width: 1440px) {
+    padding-left: 340px;
+  }
 `;
 
 export const IconItems = styled.li`
@@ -44,6 +40,10 @@ export const IconItems = styled.li`
   width: 16px;
   display: flex;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover,
   &:focus {
     background-color: #f472b7;
@@ -52,19 +52,38 @@ export const IconItems = styled.li`
   }
 `;
 
-export const PinkSmile = styled.img`
-  position: absolute;
-  bottom: -60px;
-  left: 15px;
+export const PinkSmileFooter = styled.img`
+  display: none;
+
+  @media screen and (min-width: 1440px) {
+    display: block;
+    position: absolute;
+    bottom: -60px;
+    left: 15px;
+  }
 `;
 
 export const GreenSmile = styled.img`
-  position: absolute;
-  top: 0;
-  right: 128px;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 128px;
+  }
+  @media screen and (min-width: 1440px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 128px;
+  }
 `;
 
 export const YellowSmile = styled.img`
-  position: absolute;
-  right: -38px;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    right: -38px;
+  }
 `;

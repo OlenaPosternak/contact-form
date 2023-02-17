@@ -11,7 +11,7 @@ import {
   FooterInfo,
   Icons,
   IconItems,
-  PinkSmile,
+  PinkSmileFooter,
   GreenSmile,
   YellowSmile,
 } from './Footer.styled';
@@ -22,7 +22,7 @@ export const Footer = () => {
     <FooterSection>
       <Container>
         <FooterInfo>
-          <PinkSmile
+          <PinkSmileFooter
             src={pinkSmile}
             alt="Instagram Logo"
             width={284}

@@ -12,6 +12,7 @@ import {
   Title,
   FormSection,
   FormInput,
+  Error,
   Button,
   Smile,
   Elipse,
@@ -52,7 +53,7 @@ export const ContactForm = () => {
     setInfo(info);
 
     notify();
-    // console.log(`values`, values);
+    console.log(`values`, values);
     dispatch(addMessage(values));
     resetForm();
   };
@@ -70,10 +71,10 @@ export const ContactForm = () => {
         >
           <FormSection autoComplete="off">
             <FormInput type="text" name="name" placeholder="Your name*" />
-            <ErrorMessage name="name" component="div" />
+            <Error name="name" component="div" />
 
             <FormInput type="text" name="email" placeholder="Your e-mail*" />
-            <ErrorMessage name="email" component="div" />
+            <Error name="email" component="div" />
 
             <FormInput
               component="textarea"
@@ -82,7 +83,7 @@ export const ContactForm = () => {
               name="info"
               placeholder="Your message*"
             />
-            <ErrorMessage name="info" component="div" />
+            <Error name="info" component="div" />
             <Button type="submit">Send message</Button>
           </FormSection>
         </Formik>
