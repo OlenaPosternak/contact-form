@@ -1,16 +1,14 @@
+import { ContactForm } from './ContactForm/ContactForm';
+import { Footer } from './Footer/Footer';
+import { MapSection } from './MapImg/Map';
+
+import { Body } from './App.styled';
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <Body>
+      <ContactForm />
+      <MapSection />
+      <Footer />
+    </Body>
   );
 };
