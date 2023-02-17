@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { smile } from '../../animation';
 
 export const MapImg = styled.img`
   display: none;
@@ -32,6 +33,11 @@ export const PinkSmile = styled.img`
     bottom: 0px;
     right: 380px;
   }
+
+  &:hover,
+  &:focus {
+    animation: ${smile} 1s ease infinite;
+  }
 `;
 
 export const YellowSmile = styled.img`
@@ -43,5 +49,9 @@ export const YellowSmile = styled.img`
     left: px;
     bottom: 180px;
     right: 560px;
+  }
+  &:hover,
+  &:focus {
+    animation: ${smile} 1s ease infinite;
   }
 `;

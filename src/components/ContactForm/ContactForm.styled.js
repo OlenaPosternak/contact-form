@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { keyframes } from '@emotion/react';
+import { smile, bounce } from '../../animation';
 
 import { Field, Form, ErrorMessage } from 'formik';
 
@@ -90,23 +90,11 @@ export const FormInput = styled(Field)`
 `;
 
 export const Error = styled(ErrorMessage)`
-padding-left: 10px;
+  padding-left: 10px;
   color: red;
 `;
 
-const bounce = keyframes`
-     0% {
-    transform: scale(1);
-  }
 
-  50% {
-    transform: scale(1.15);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-`;
 
 export const Button = styled.button`
   background-color: #fad34f;
@@ -131,6 +119,11 @@ export const Smile = styled.img`
   position: absolute;
   left: 30px;
   top: 20px;
+
+  &:hover,
+  &:focus {
+    animation: ${smile} 1s ease infinite;
+  }
 `;
 
 export const Elipse = styled.img`

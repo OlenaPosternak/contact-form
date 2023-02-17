@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { smile } from '../../animation';
 
 export const FooterSection = styled.div`
   position: relative;
@@ -61,6 +62,11 @@ export const PinkSmileFooter = styled.img`
     bottom: -60px;
     left: 15px;
   }
+
+  &:hover,
+  &:focus {
+    animation: ${smile} 1s ease infinite;
+  }
 `;
 
 export const GreenSmile = styled.img`
@@ -85,5 +91,9 @@ export const YellowSmile = styled.img`
     display: block;
     position: absolute;
     right: -38px;
+  }
+  &:hover,
+  &:focus {
+    animation: ${smile} 1s ease infinite;
   }
 `;
