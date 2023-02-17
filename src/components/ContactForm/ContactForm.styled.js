@@ -24,7 +24,7 @@ export const FormSection = styled(Form)`
   gap: 8px;
 `;
 export const FormInput = styled(Field)`
-  width: 557px;
+  width: 467px;
   height: 93px;
   padding-left: 45px;
   padding-right: 45px;
